@@ -10,6 +10,7 @@ Public Class Form1
     End Sub
 
     Private Sub BackgroundWorker1_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles BackgroundWorker1.DoWork
+        Button1.Enabled = False
         BackgroundWorker1.ReportProgress(25, "Installing VC2010")
         Dim wc As New WebClient
         Dim Temp As String = System.IO.Path.GetTempPath
@@ -39,7 +40,7 @@ Public Class Form1
     End Sub
 
     Private Sub BackgroundWorker1_RunWorkerCompleted(sender As Object, e As RunWorkerCompletedEventArgs) Handles BackgroundWorker1.RunWorkerCompleted
-        Form2.Show()
+        MsgBox("Done!", vbOKOnly + vbInformation, "Installed!")
         Timer1.Interval = 1000
         Timer1.Start()
     End Sub
@@ -48,8 +49,6 @@ Public Class Form1
         ' Stop the timer
         Timer1.Stop()
 
-        ' Code to execute after the delay
-        Form2.Close()
         Me.Close()
     End Sub
 End Class

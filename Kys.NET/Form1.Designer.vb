@@ -35,24 +35,24 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(72, 12)
+        Me.Button1.Location = New System.Drawing.Point(12, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(92, 23)
+        Me.Button1.Size = New System.Drawing.Size(62, 23)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Install and Die"
+        Me.Button1.Text = "Install"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 58)
+        Me.ProgressBar1.Location = New System.Drawing.Point(80, 12)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(224, 23)
+        Me.ProgressBar1.Size = New System.Drawing.Size(156, 23)
         Me.ProgressBar1.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(96, 42)
+        Me.Label1.Location = New System.Drawing.Point(12, 44)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(38, 13)
         Me.Label1.TabIndex = 2
@@ -65,12 +65,15 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(248, 92)
+        Me.ClientSize = New System.Drawing.Size(248, 66)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Button1)
+        Me.MaximumSize = New System.Drawing.Size(264, 105)
+        Me.MinimumSize = New System.Drawing.Size(264, 105)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Fix"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
